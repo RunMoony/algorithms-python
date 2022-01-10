@@ -14,7 +14,7 @@ while True :
         sum+=first
         m -= 1
     if m==0:
-        break;
+        break
     sum+=second
     m -= 1
 
