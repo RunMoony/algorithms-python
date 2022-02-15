@@ -1,3 +1,5 @@
+#답안참고하였음
+
 def rotated(key): #시계방향으로 90도 회전함수
     n = len(key) #행의 길이
     m = len(key[0]) #열의 길이
