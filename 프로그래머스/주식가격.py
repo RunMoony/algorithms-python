@@ -1,10 +1,10 @@
 def solution(prices):
-    answer = []
-    while prices != []:
-        cnt = 0
-        price = prices.pop(0)
-        for i in range(len(prices)):
-            if price <= prices[i]:
-                cnt += 1
-        answer.append(cnt)
+    answer = [0] * len(prices)
+    for i in range(len(prices)):
+        for j in range(i+1,len(prices)):
+            if prices[i] <= prices[j]:
+                answer[i] += 1
+            else:
+                answer[i] += 1
+                break
     return answer
